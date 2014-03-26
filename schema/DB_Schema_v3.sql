@@ -25,7 +25,7 @@ BEGIN
       (Param_Username);
     
     # Get the new users ID 
-  #  SET @Local_UserID = (SELECT LAST_INSERT_ID() FROM Users);
+    SET @Local_UserID = (SELECT LAST_INSERT_ID() FROM Users);
   #END
     
   # Now lets insert the address information
