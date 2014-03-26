@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Basic marketing site</title>
+		<title>Drive with Me - The Kick-ass Car Sharing Site for Cool People</title>
 		<link rel="stylesheet" href="css/uikit.min.css" />
 		<!-- Almost Flat style -->
 		<link rel="stylesheet" href="css/uikit.almost-flat.min.css" />
@@ -107,6 +107,7 @@
                     Welcome to drive with me the fantastic car sharing app!
                     
 				</p>
+				<button class="uk-button uk-button-primary uk-button-large">Learn more &raquo;</button>
 			</article>
 
 			<!-- Panel alternative
@@ -140,7 +141,6 @@
 						<h3 class="uk-panel-title">Heading</h3>
                             
                         <?php include "./display_all_journeys.php" ?>
-                        
                         
                         <button class="uk-button">View details &raquo;</button>
 						
