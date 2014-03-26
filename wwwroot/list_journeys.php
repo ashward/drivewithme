@@ -6,7 +6,7 @@ if($db->connect_errno > 0){
     die('Unable to connect to database [' . $db->connect_error . ']');
 }
 
-$result = $mysqli->query("CALL Return_Journeys()");
+$result = $mysqli->query("SELECT * from drivewithme.Journeys, drivewithme.Users, drivewithme.Addresses where Users.ID = Journeys.User_ID and Journeys.From_Address_ID = Addresses.ID");
 if(! $result){
 echo "No journeys";
 die();
