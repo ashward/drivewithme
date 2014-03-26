@@ -10,7 +10,6 @@
 		<!-- <link rel="stylesheet" href="css/uikit.gradient.min.css" /> -->
 
 		<!-- Some fixes to things that are irregular to UIkit -->
-		<link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/simple.css" />
 
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -105,12 +104,9 @@
 			<article class="uk-article">
 				<h1 class="uk-article-title" style="text-align:center;">Drive with me</h1>
 				<p class="uk-article-lead" style="text-align:center;">
-                    
-                                <a class="button" href="./add_journey.php">Register a Journey!</a>
-
+                    Welcome to drive with me the fantastic car sharing app!
                     
 				</p>
-				<!--
 				<button class="uk-button uk-button-primary uk-button-large">Learn more &raquo;</button>
 			</article>
 
@@ -132,32 +128,29 @@
 			<div class="uk-grid">
 				<div class="uk-width-medium-1-3">
 					<div class="uk-panel">
-						<h3 class="uk-panel-title">Heading</h3>
+						<h3 class="uk-panel-title">Add a Journey</h3>
 
                         <?php include "./add_journey.php" ?>
 						
 						<br><br>
 					</div>
 				</div>
-                
-                <!--
+            
 				<div class="uk-width-medium-1-3">
 					<div class="uk-panel">
 						<h3 class="uk-panel-title">Heading</h3>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                        <!--- broken --->
 						<button class="uk-button">View details &raquo;</button>
 						
-						<!-- No padding at bottom, add some 
 						<br><br>
 					</div>
 				</div>
 				<div class="uk-width-medium-1-3">
 					<div class="uk-panel">
 						<h3 class="uk-panel-title">Heading</h3>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                        <!--- insert stuff herer -->
 						<button class="uk-button">View details &raquo;</button>
 						
-						<!-- No padding at bottom, add some
 						<br><br>
 					</div>
 				</div>

@@ -1,8 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Add a journey</title>
-</head>
 <?php
 if(array_key_exists("home", $_REQUEST))
 {
@@ -14,8 +9,3 @@ if(array_key_exists("home", $_REQUEST))
 <label for="home">Home: <input id="home" name="home" type="text"/></label>
 <input type="submit" />
 </form>
-
-<hr />
-
-<a href="index.html">Back</a>
-</html>
