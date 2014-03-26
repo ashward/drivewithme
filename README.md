@@ -1,6 +1,6 @@
 # drivewithme
 
-Kick-ass Car Sharing App for the World
+Kick-Arse Car Sharing App for the World
 
 ### Contributing to drivewithme
 
