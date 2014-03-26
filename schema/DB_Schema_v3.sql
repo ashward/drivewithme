@@ -23,8 +23,9 @@ BEGIN
     VALUES
       (@Param_Username)
     
-    # Get the new users ID  
-    SELECT LAST_INSERT_ID() INTO @Local_UserID FROM Users
+    # Get the new users ID 
+    SET @Local_UserID = (SELECT LAST_INSERT_ID() FROM Users)
+    #SELECT LAST_INSERT_ID() INTO @Local_UserID FROM Users
   #END IF
     
   # Now lets insert the address information
@@ -35,8 +36,8 @@ BEGIN
     (@Param_Address_Line_1,@Param_Address_Line_2,@Param_Address_Line_3,@Param_Address_Line_4,@Param_Postcode)
   
   # Gets the new addresses ID
-  SELECT LAST_INSERT_ID() INTO @Local_AddressID FROM Addresses
-    
+  #SELECT LAST_INSERT_ID() INTO @Local_AddressID FROM Addresses
+  SET @Local_AddressID = (SELECT LAST_INSERT_ID() FROM Addresses) 
     
   # Now lets insert the journey information
   INSERT INTO
