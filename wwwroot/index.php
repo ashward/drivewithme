@@ -139,8 +139,11 @@
 				<div class="uk-width-medium-1-3">
 					<div class="uk-panel">
 						<h3 class="uk-panel-title">Heading</h3>
-                        <!--- broken --->
-						<button class="uk-button">View details &raquo;</button>
+                            
+                        <?php include "./display_all_journeys.php" ?>
+                        
+                        
+                        <button class="uk-button">View details &raquo;</button>
 						
 						<br><br>
 					</div>
