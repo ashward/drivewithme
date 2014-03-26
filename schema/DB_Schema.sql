@@ -12,9 +12,9 @@ CREATE TABLE Journeys (
 
 CREATE TABLE Addresses (
          ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-         Address_Line_1,
-         Address_Line_2,
-         Address_Line_3,
-         Address_Line_4,
-         PostCode
+         Address_Line_1 varchar(200),
+         Address_Line_2 varchar(200),
+         Address_Line_3 varchar(200),
+         Address_Line_4 varchar(200),
+         PostCode varchar(50)
        );
