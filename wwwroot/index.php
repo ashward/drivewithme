@@ -107,7 +107,6 @@
                     Welcome to drive with me the fantastic car sharing app!
                     
 				</p>
-				<button class="uk-button uk-button-primary uk-button-large">Learn more &raquo;</button>
 			</article>
 
 			<!-- Panel alternative
