@@ -19,6 +19,7 @@ The drivewithme app utilises mysql as the underlying database technology. The sc
 Release 1:
 
 run DB_Schema.sql        (This is only required to be run once, it creates the initial tables)
+
 run DB_Schemea_v2.sql    (This is only required to be run once, it removes the "Email_Address" field in the users table)
 
 ### Bug Reports/Change Request/New Feature
