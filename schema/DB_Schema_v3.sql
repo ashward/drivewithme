@@ -47,4 +47,21 @@ BEGIN
   
 END //
 
+CREATE PROCEDURE Return_Journeys()
+BEGIN
+  SELECT
+    Username,
+    Address_Line_1,
+    Address_Line_2,
+    Address_Line_3,
+    Address_Line_4,
+    PostCode
+  FROM
+    Journeys AS J
+  JOIN Users AS U
+  ON U.ID = J.User_ID
+  JOIN Addresses AS A
+  ON A.ID = A.From_Address_ID;
+END //
+
 DELIMITER ;
