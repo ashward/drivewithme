@@ -14,7 +14,7 @@ BEGIN
   # Check that the user doesn't already exists before inserting
   SELECT CASE WHEN (SELECT COUNT(ID) FROM Users WHERE Username = @Param_Username) > 0
   THEN
-    SET @Local_UserID = (SELECT ID FROM Users WHERE Username = @Param_Username)
+    SELECT ID INTO @Local_UserID FROM Users WHERE Username = @Param_Username;
   ELSE
     INSERT INTO 
       Users
