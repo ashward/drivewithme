@@ -1,12 +1,7 @@
 <?php
 include 'connection_info.php';
 
-$mysqli = new mysqli($db_hostname, $db_username, $db_password, $db_database, "3306");
-if($db->connect_errno > 0){
-    die('Unable to connect to database [' . $db->connect_error . ']');
-}
-
-$result = $mysqli->query("SELECT * from drivewithme.Journeys, drivewithme.Users, drivewithme.Addresses where Users.ID = Journeys.User_ID and Journeys.From_Address_ID = Addresses.ID");
+$result = $db->query("SELECT * from drivewithme.Journeys, drivewithme.Users, drivewithme.Addresses where Users.ID = Journeys.User_ID and Journeys.From_Address_ID = Addresses.ID");
 if(! $result){
 echo "No journeys";
 die();
