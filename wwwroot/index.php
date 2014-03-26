@@ -102,11 +102,15 @@
 			<!-- UIkit has an alternative to "hero unit", either panel or article - showing implementation of both. -->
 
 			<article class="uk-article">
-				<h1 class="uk-article-title" style="text-align:center;">Drive with me</h1>
-				<p class="uk-article-lead" style="text-align:center;">
-                    Welcome to drive with me the fantastic car sharing app!
-                    
-				</p>
+                
+                <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                    <h1 style="text-align:center;">Drive with me</h1>
+                    <p class="h3" style="text-align:center;">
+                        Welcome to drive with me the fantastic car sharing app!
+
+                    </p>
+                </div>
+				
 			</article>
 
 			<!-- Panel alternative
@@ -126,7 +130,7 @@
 
 			<div class="uk-grid">
 				<div class="uk-width-medium-1-3">
-					<div class="uk-panel">
+					<div class="uk-panel uk-panel-box uk-panel-box-secondary">
 						<h3 class="uk-panel-title">Add a Journey</h3>
 
                         <?php include "./add_journey.php" ?>
@@ -135,9 +139,9 @@
 					</div>
 				</div>
             
-				<div class="uk-width-medium-1-3">
-					<div class="uk-panel">
-						<h3 class="uk-panel-title">Heading</h3>
+				<div class="uk-width-medium-2-3">
+					<div class="uk-panel uk-panel-box uk-panel-box-secondary">
+						<h3 class="uk-panel-title">View Journeys</h3>
                             
                         <?php include "./display_all_journeys.php" ?>
                         
@@ -147,15 +151,15 @@
 						<br><br>
 					</div>
 				</div>
-				<div class="uk-width-medium-1-3">
-					<div class="uk-panel">
-						<h3 class="uk-panel-title">Heading</h3>
-                        <!--- insert stuff herer -->
-						<button class="uk-button">View details &raquo;</button>
+				<!--<div class="uk-width-medium-1-3">
+					<div class="uk-panel uk-panel-box uk-panel-box-secondary">
+						<h3 class="uk-panel-title">Filter Journeys by town</h3>
+                        <!--- insert stuff here -->
 						
 						<br><br>
 					</div>
 				</div>
+                -->
 			</div>
 
 			<!-- Some spacing -->
