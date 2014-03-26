@@ -12,9 +12,10 @@ BEGIN
   SET @Local_AddressID int;
   
   # Check that the user doesn't already exists before inserting
-  SELECT CASE WHEN (SELECT COUNT(ID) FROM Users WHERE Username = @Param_Username) > 0
+  IF (SELECT COUNT(ID) FROM Users WHERE Username = @Param_Username) > 0
   THEN
-    SELECT ID INTO @Local_UserID FROM Users WHERE Username = @Param_Username;
+    SET @Local_UserID = (SELECT ID FROM Users WHERE Username = @Param_Username);
+    #SELECT ID INTO @Local_UserID FROM Users WHERE Username = @Param_Username;
   ELSE
     INSERT INTO 
       Users
@@ -24,7 +25,7 @@ BEGIN
     
     # Get the new users ID  
     SELECT LAST_INSERT_ID() INTO @Local_UserID FROM Users
-  END
+  END IF
     
   # Now lets insert the address information
   INSERT INTO
