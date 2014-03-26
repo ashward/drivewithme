@@ -8,8 +8,8 @@ CREATE PROCEDURE Insert_Journey
   Param_Postcode varchar(50)
 )
 BEGIN
-  SET @Local_UserID int
-  SET @Local_AddressID int
+  SET @Local_UserID int;
+  SET @Local_AddressID int;
   
   # Check that the user doesn't already exists before inserting
   SELECT CASE WHEN (SELECT COUNT(ID) FROM Users WHERE Username = @Param_Username) > 0
