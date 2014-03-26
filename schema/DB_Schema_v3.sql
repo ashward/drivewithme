@@ -1,3 +1,5 @@
+DELIMITER //
+
 CREATE PROCEDURE Insert_Journey
 (
   IN Param_Username varchar(50),
@@ -8,14 +10,14 @@ CREATE PROCEDURE Insert_Journey
   IN Param_Postcode varchar(50)
 )
 BEGIN
-  SET @Local_UserID int;
-  SET @Local_AddressID int;
+  DECLARE Local_UserID int;
+  DECLARE Local_AddressID int;
   
   # Check that the user doesn't already exists before inserting
-  IF (SELECT COUNT(ID) FROM Users WHERE Username = @Param_Username) > 0
-  THEN
-    SET @Local_UserID = (SELECT ID FROM Users WHERE Username = @Param_Username);
-  ELSE
+  #IF (SELECT COUNT(ID) FROM Users WHERE Username = @Param_Username) > 0
+  #THEN
+  #  SET @Local_UserID = (SELECT ID FROM Users WHERE Username = @Param_Username);
+  #ELSE
     INSERT INTO 
       Users
       (Username)
@@ -23,8 +25,8 @@ BEGIN
       (Param_Username);
     
     # Get the new users ID 
-    SET @Local_UserID = (SELECT LAST_INSERT_ID() FROM Users);
-  END
+  #  SET @Local_UserID = (SELECT LAST_INSERT_ID() FROM Users);
+  #END
     
   # Now lets insert the address information
   INSERT INTO
@@ -43,4 +45,6 @@ BEGIN
   VALUES
     (@Local_UserID,@Local_AddressID);
   
-END
+END //
+
+DELIMITER ;
