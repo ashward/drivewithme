@@ -1,1 +1,1 @@
-DROP TABLE Users;
+ALTER TABLE 'Users' DROP 'Email_Address';
