@@ -11,7 +11,6 @@ if(! $result){
 echo "No journeys";
 die();
 }
-var_dump($result);
 echo "<table>";
 echo "<tr>";
 echo "<th>Address Line 1</th>";
