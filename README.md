@@ -14,7 +14,13 @@ The web pages can be found under the wwwroot folder.
 
 #### Database
 
-The drivewithme app utilises mysql as the underlying database technology. The schema to initialise the database can be located in the schema folder
+The drivewithme app utilises mysql as the underlying database technology. The schema to initialise the database can be located in the schema folder. It is important that you run the versions that relate toe your deployment release. (See Below)
+
+Release 1:
+
+run DB_Schema.sql        (This is only required to be run once, it creates the initial tables)
+
+run DB_Schemea_v2.sql    (This is only required to be run once, it removes the "Email_Address" field in the users table)
 
 ### Bug Reports/Change Request/New Feature
 
