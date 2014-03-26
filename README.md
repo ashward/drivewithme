@@ -20,7 +20,9 @@ Release 1:
 
 run DB_Schema.sql        (This is only required to be run once, it creates the initial tables)
 
-run DB_Schemea_v2.sql    (This is only required to be run once, it removes the "Email_Address" field in the users table)
+run DB_Schema_v2.sql     (This is only required to be run once, it removes the "Email_Address" field in the users table)
+
+run DB_Schema_v3.sql     (Only needs to be run once, this provides the stored procedures to insert a journey & return journeys)
 
 ### Bug Reports/Change Request/New Feature
 
