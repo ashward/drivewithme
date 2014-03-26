@@ -158,14 +158,13 @@
 						<br><br>
 					</div>
 				</div>
-                -->
 			</div>
 
 			<!-- Some spacing -->
 			<br><br>
 
-			<footer class="uk-align-left">
-				&copy; basftd 2014
+			<footer class="uk-align-center">
+				<div class="uk-container uk-container-center">&copy; basftd 2014</div>
 			</footer>
 		</div>
 	</body>
